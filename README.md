@@ -331,13 +331,21 @@ class PatchGANDiscriminator(nn.Module):
 (なお、本当はこれの前に数十エポックは行われているはずだが、colab notebookのバグなのか、最初の20分以上の学習を出力してくれていない？)
 
 Epoch [1/100] Loss_G: 21.0084 Loss_D: 0.0010 Val_Loss: 13.5319
+
 Epoch [2/100] Loss_G: 19.6205 Loss_D: 0.0006 Val_Loss: 11.7064
+
 Epoch [3/100] Loss_G: 18.7184 Loss_D: 0.0004 Val_Loss: 11.3023
+
 Epoch [4/100] Loss_G: 5.8163 Loss_D: 0.6613 Val_Loss: 3.0838
+
 Epoch [5/100] Loss_G: 2.4343 Loss_D: 0.6886 Val_Loss: 2.5419
+
 Epoch [6/100] Loss_G: 1.9796 Loss_D: 0.6926 Val_Loss: 2.4617
+
 Epoch [7/100] Loss_G: 1.7180 Loss_D: 0.6928 Val_Loss: 2.1081
+
 Epoch [8/100] Loss_G: 1.5679 Loss_D: 0.6922 Val_Loss: 1.9957
+
 Epoch [9/100] Loss_G: 1.4606 Loss_D: 0.6924 Val_Loss: 1.9666
 
 初めは生成器も判別器も損失が下がっていたが、先に判別器の損失がほぼ0になった(クオリティの高い判別器が完成)。その判別器を騙すような画像を生成できるように生成器は学習する。
